@@ -6,48 +6,60 @@
   <title>Dorothy Mejes Portfolio</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    /* Base styles */
+    /* Reset & base */
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
-    body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333; }
-    a { color: #F7CACA; text-decoration: none; }
-    h1,h2,h3 { font-family: 'Montserrat', sans-serif; color: #333; }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    h2 { font-size: 2rem; margin-bottom: 1rem; }
-    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-    p { margin-bottom: 1rem; color: #555; }
+    body { font-family:'Lato', sans-serif; background:#FAFAFA; color:#333; line-height:1.6; }
+    a { color:#F7CACA; text-decoration:none; }
+    h1,h2,h3 { font-family:'Montserrat', sans-serif; color:#333; }
+    h1{ font-size:3rem; margin-bottom:0.5rem; }
+    h2{ font-size:2rem; margin-bottom:1rem; }
+    h3{ font-size:1.5rem; margin-bottom:0.5rem; }
+    p{ margin-bottom:1rem; color:#555; }
 
     /* Header / Hero */
-    header { 
+    header{ 
       text-align:center; 
-      padding:100px 20px 60px; 
-      background-color:#E6E6E6; 
-      border-bottom:1px solid #ccc; 
+      padding:120px 20px 60px; 
+      background-color:#F7CACA; 
+      color:#333;
+      border-bottom:1px solid #E6E6E6; 
+      border-radius:0 0 25px 25px;
+      position: relative;
     }
-    header p { font-size:1.2rem; margin-top:10px; color:#555; }
-    nav { text-align:center; margin-top:15px; }
-    nav a { margin:0 10px; font-weight:bold; }
+    header p{ font-size:1.2rem; margin-top:10px; }
+
+    /* Sticky Navigation */
+    nav{ text-align:center; margin-top:20px; position:sticky; top:0; background:#FAFAFA; padding:10px 0; z-index:100; border-bottom:1px solid #E6E6E6; }
+    nav a{ margin:0 12px; font-weight:bold; transition:0.3s; }
+    nav a:hover{ color:#e69999; }
 
     /* Buttons */
-    .btn { display:inline-block; padding:10px 25px; background-color:#F7CACA; color:#333; border-radius:25px; font-weight:bold; margin:10px 5px; transition:0.3s; }
-    .btn:hover { background-color:#e6a6a6; }
+    .btn{ display:inline-block; padding:10px 25px; background:#FAFAFA; color:#333; border-radius:25px; font-weight:bold; margin:10px 5px; transition:0.3s; border:2px solid #F7CACA; }
+    .btn:hover{ background:#E6E6E6; transform:scale(1.05); }
 
     /* Sections */
-    section { padding:60px 20px; max-width:900px; margin:0 auto; }
-    section:nth-child(even) { background-color:#F7F7F7; border-radius: 10px; margin: 20px 0; padding: 60px 20px; }
+    section{ padding:60px 20px; max-width:900px; margin:40px auto; border-radius:15px; transition:0.3s; }
+    section:nth-child(even){ background:#F7F7F7; }
 
-    /* Lists */
-    .skills-list, .experience-list { list-style:none; padding-left:0; }
-    .skills-list li, .experience-list li { margin-bottom:10px; }
+    /* Skill / Experience badges */
+    .skills-list, .experience-list{ list-style:none; padding-left:0; display:flex; flex-wrap:wrap; gap:10px; }
+    .skills-list li, .experience-list li{ background:#F7CACA; color:#333; padding:8px 12px; border-radius:25px; font-weight:bold; display:flex; align-items:center; transition:0.3s; cursor:pointer; }
+    .skills-list li i, .experience-list li i{ margin-right:8px; }
+    .skills-list li:hover, .experience-list li:hover{ background:#e69999; transform:scale(1.1); color:#fff; }
 
     /* Footer */
-    footer { text-align:center; padding:40px 20px; background-color:#E6E6E6; color:#333; }
+    footer{ text-align:center; padding:40px 20px; background:#E6E6E6; color:#333; border-radius:25px 25px 0 0; }
 
-    /* Icons */
-    .icon { color: #F7CACA; margin-right: 8px; }
-
+    /* Responsive */
+    @media(max-width:600px){
+      h1{ font-size:2.2rem; }
+      h2{ font-size:1.7rem; }
+      h3{ font-size:1.2rem; }
+      .skills-list, .experience-list{ flex-direction:column; }
+    }
   </style>
 </head>
 <body>
@@ -59,75 +71,61 @@
     <p>Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.</p>
     <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Contact Me</a>
     <a href="#skills" class="btn"><i class="fas fa-briefcase"></i> View Portfolio</a>
-    <nav>
-      <a href="#about">About Me</a> |
-      <a href="#skills">Skills</a> |
-      <a href="#experience">Experience</a> |
-      <a href="#education">Education</a> |
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <!-- About Me Section -->
+  <!-- Navigation -->
+  <nav>
+    <a href="#about"><i class="fas fa-user"></i> About Me</a>
+    <a href="#skills"><i class="fas fa-lightbulb"></i> Skills</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <!-- About Me -->
   <section id="about">
     <h2>About Me <i class="fas fa-user"></i></h2>
     <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, adaptable, and strong in time management & communication. Background allows easy adaptation — teaching, supporting business operations, or representing a brand with confidence.</p>
   </section>
 
-  <!-- Core Skills Section -->
+  <!-- Skills -->
   <section id="skills">
     <h2>Core Skills <i class="fas fa-lightbulb"></i></h2>
-    <h3>Teaching & Communication <i class="fas fa-chalkboard-teacher"></i></h3>
     <ul class="skills-list">
-      <li>Online & classroom teaching</li>
-      <li>Student engagement & facilitation</li>
-      <li>Clear communication</li>
-      <li>Time & classroom management</li>
+      <li><i class="fas fa-chalkboard-teacher"></i> Teaching & Communication</li>
+      <li><i class="fas fa-file-invoice-dollar"></i> Admin & Accounting Support</li>
+      <li><i class="fas fa-users"></i> Creative & People Skills</li>
+      <li><i class="fas fa-laptop"></i> Virtual Assistant Tools</li>
     </ul>
-
-    <h3>Admin & Accounting Support <i class="fas fa-file-invoice-dollar"></i></h3>
+    <p>Tools & Platforms:</p>
     <ul class="skills-list">
-      <li>Invoice processing & validation</li>
-      <li>ERP Systems (QERP)</li>
-      <li>Accounts receivable support</li>
-      <li>Data entry & reconciliation</li>
-      <li>Documentation & reporting</li>
-    </ul>
-
-    <h3>Creative & People Skills <i class="fas fa-users"></i></h3>
-    <ul class="skills-list">
-      <li>Hosting & presentation</li>
-      <li>Customer service</li>
-      <li>Event coordination</li>
-      <li>Professional yet warm personality</li>
-    </ul>
-
-    <h3>Virtual Assistant Tools <i class="fas fa-laptop"></i></h3>
-    <ul class="skills-list">
-      <li>Zoom, Microsoft Teams</li>
-      <li>Google Docs & Forms</li>
-      <li>Laptop-based teaching & admin tools</li>
+      <li><i class="fab fa-google"></i> Google Docs & Forms</li>
+      <li><i class="fas fa-video"></i> Zoom</li>
+      <li><i class="fab fa-windows"></i> Microsoft Teams</li>
+      <li><i class="fas fa-laptop-code"></i> Laptop-based Admin Tools</li>
     </ul>
   </section>
 
-  <!-- Work Experience Section -->
+  <!-- Experience -->
   <section id="experience">
     <h2>Work Experience <i class="fas fa-briefcase"></i></h2>
     <ul class="experience-list">
-      <li><strong>Invoicing / Accounting Staff – Jockers Food Industries</strong><br>Processed and validated invoices, supported accounts receivable, maintained accurate ERP records.</li>
-      <li><strong>Private Elementary Teacher – Easy Steps Learning School of Malolos</strong><br>Delivered structured lessons, managed student progress, communicated with parents & staff.</li>
-      <li><strong>Party Host / Store Marketing Assistant – Jollibee (College Years)</strong><br>Hosted events, assisted marketing activities, delivered engaging customer experiences.</li>
+      <li><i class="fas fa-file-invoice"></i> Invoicing / Accounting Staff – Jockers Food Industries</li>
+      <li><i class="fas fa-school"></i> Private Elementary Teacher – Easy Steps Learning School of Malolos</li>
+      <li><i class="fas fa-birthday-cake"></i> Party Host / Store Marketing Assistant – Jollibee (College Years)</li>
     </ul>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education">
     <h2>Education & Credentials <i class="fas fa-graduation-cap"></i></h2>
-    <p><strong>Bachelor of Elementary Education</strong> – Bulacan State University</p>
-    <p><strong>Licensed Professional Teacher (LET Passer)</strong></p>
+    <ul class="skills-list">
+      <li><i class="fas fa-university"></i> Bachelor of Elementary Education – Bulacan State University</li>
+      <li><i class="fas fa-certificate"></i> Licensed Professional Teacher (LET Passer)</li>
+    </ul>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me <i class="fas fa-envelope"></i></h2>
     <p>📧 Email: <a href="mailto:dothymejes@email.com">dothymejes@email.com</a></p>
@@ -143,4 +141,5 @@
 
 </body>
 </html>
+
 
