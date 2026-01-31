@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,8 +11,9 @@
   <style>
     /* Reset & base styles */
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
-    body { font-family: 'Lato', sans-serif; background-color: #ffa3a3; color: #333; }
-    a { color: #F7CACA; text-decoration: none; }
+    body { font-family: 'Lato', sans-serif; background-color: #fff5f7; color: #333; }
+    a { color: #d77c91; text-decoration: none; transition: 0.3s; }
+    a:hover { color: #b85a70; }
     h1,h2,h3 { font-family: 'Montserrat', sans-serif; color: #333; }
     h1 { font-size: 3rem; margin-bottom: 0.5rem; }
     h2 { font-size: 2rem; margin-bottom: 1rem; }
@@ -23,9 +24,9 @@
     header { 
       text-align:center; 
       padding:100px 20px 60px; 
-      background-color:#F7CACA; 
+      background-color:#ffe6eb; 
       color:#333;
-      border-bottom:1px solid #E6E6E6; 
+      border-bottom:1px solid #f0d9df; 
       border-radius:0 0 25px 25px;
     }
     header p { font-size:1.2rem; margin-top:10px; }
@@ -33,23 +34,43 @@
     nav a { margin:0 10px; font-weight:bold; }
 
     /* Buttons */
-    .btn { display:inline-block; padding:10px 25px; background-color:#d18c8c; color:#333; border-radius:25px; font-weight:bold; margin:10px 5px; transition:0.3s; border:2px solid #F7CACA; }
-    .btn:hover { background-color:#E6E6E6; }
+    .btn { 
+      display:inline-block; 
+      padding:10px 25px; 
+      background-color:#f7c8d2; 
+      color:#333; 
+      border-radius:25px; 
+      font-weight:bold; 
+      margin:10px 5px; 
+      transition:0.3s; 
+      border:2px solid #f7a3b1; 
+    }
+    .btn:hover { background-color:#ffd9e3; }
 
     /* Sections */
-    section { padding:60px 20px; max-width:900px; margin:40px auto; border-radius:15px; }
-    section:nth-child(even) { background-color:#F7F7F7; }
+    section { padding:60px 20px; max-width:900px; margin:40px auto; border-radius:15px; background-color:#ffffff; box-shadow:0 3px 10px rgba(0,0,0,0.05); }
+
+    section:nth-child(even) { background-color:#fff0f5; }
 
     /* Lists */
     .skills-list, .experience-list { list-style:none; padding-left:0; display:flex; flex-wrap:wrap; gap:10px; }
-    .skills-list li, .experience-list li { background-color:#F7CACA; color:#333; padding:8px 12px; border-radius:20px; font-weight:bold; display:flex; align-items:center; }
-    .skills-list li i, .experience-list li i { margin-right:8px; }
+    .skills-list li, .experience-list li { 
+      background-color:#ffd6e0; 
+      color:#333; 
+      padding:8px 12px; 
+      border-radius:20px; 
+      font-weight:bold; 
+      display:flex; 
+      align-items:center; 
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    }
+    .skills-list li i, .experience-list li i { margin-right:8px; color:#d77c91; }
 
     /* Footer */
-    footer { text-align:center; padding:40px 20px; background-color:#E6E6E6; color:#333; border-radius:25px 25px 0 0; }
+    footer { text-align:center; padding:40px 20px; background-color:#ffe6eb; color:#333; border-radius:25px 25px 0 0; }
 
     /* Icons */
-    .icon { color: #F7CACA; margin-right: 8px; }
+    .icon { color: #d77c91; margin-right: 8px; }
 
     /* Responsive */
     @media(max-width:600px){
@@ -58,7 +79,6 @@
       h3{ font-size:1.2rem; }
       .skills-list, .experience-list{ flex-direction: column; }
     }
-
   </style>
 </head>
 <body>
@@ -138,4 +158,3 @@
 
 </body>
 </html>
-
