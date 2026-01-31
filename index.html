@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,114 +6,101 @@
   <title>Dorothy Mejes Portfolio</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    /* Reset & base styles */
+    /* Reset & base */
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
-    body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333; }
-    a { color: #b76e79; text-decoration: none; transition: 0.3s; }
-    a:hover { color: #8e4b50; }
-    h1,h2,h3 { font-family: 'Montserrat', sans-serif; color: #333; }
-    h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #b76e79; text-shadow: 0 1px 2px rgba(0,0,0,0.1); }
-    h2 { font-size: 2rem; margin-bottom: 1rem; color: #4a4a4a; }
-    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #4a4a4a; }
-    p { margin-bottom: 1rem; color: #555; line-height: 1.7; }
+    body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333; line-height:1.7; }
+    a { color:#b86b72; text-decoration:none; transition:0.3s; }
+    a:hover { color:#8e4b50; }
+
+    /* Headings */
+    h1,h2,h3 { font-family:'Montserrat', sans-serif; color:#333; }
+    h1 { font-size:3rem; color:#b76e79; margin-bottom:0.5rem; text-align:center; text-shadow:0 1px 2px rgba(0,0,0,0.1);}
+    h2 { font-size:2rem; margin-bottom:1rem; }
+    h3 { font-size:1.5rem; margin-bottom:0.5rem; }
+
+    p { margin-bottom:1rem; color:#555; }
 
     /* Header / Hero */
     header { 
-      text-align:center; 
-      padding:100px 20px 60px; 
+      text-align:center;
+      padding:100px 20px 60px;
       background: linear-gradient(145deg, #f7d2d0, #f7caca);
-      color:#333;
       border-bottom:1px solid #e5d4d2; 
       border-radius:0 0 25px 25px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
     }
-    header p { font-size:1.2rem; margin-top:10px; }
-    nav { text-align:center; margin-top:15px; }
-    nav a { margin:0 12px; font-weight:bold; color:#b86b72; position: relative; }
-    nav a::after {
-      content: '';
-      display: block;
-      width: 0%;
-      height: 2px;
-      background: #b76e79;
-      transition: width 0.3s;
-      margin-top: 3px;
-    }
-    nav a:hover::after { width: 100%; }
+    header nav { margin-top:20px; }
+    nav a { margin:0 12px; font-weight:bold; position:relative; }
+    nav a::after { content:''; display:block; width:0; height:2px; background:#b86b72; transition:width 0.3s; margin-top:3px; }
+    nav a:hover::after { width:100%; }
 
     /* Buttons */
-    .btn { 
-      display:inline-block; 
-      padding:12px 28px; 
-      background: linear-gradient(135deg, #b76e79, #d9a6a2); 
-      color:#fff; 
-      border-radius:25px; 
-      font-weight:bold; 
-      margin:10px 5px; 
-      transition: all 0.3s ease; 
-      border:2px solid #b86b72; 
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .btn {
+      display:inline-block;
+      padding:12px 28px;
+      background: linear-gradient(135deg, #b76e79, #d9a6a2);
+      color:#fff;
+      border-radius:25px;
+      font-weight:bold;
+      margin:10px 5px;
+      border:2px solid #b86b72;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:all 0.3s ease;
     }
-    .btn:hover { 
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      background: linear-gradient(135deg, #d9a6a2, #b76e79);
-    }
+    .btn:hover { transform:translateY(-3px); background: linear-gradient(135deg, #d9a6a2, #b76e79); }
 
     /* Sections */
-    section { 
-      padding:60px 20px; 
-      max-width:900px; 
-      margin:40px auto; 
-      border-radius:20px; 
-      background-color:#ffffff; 
+    section {
+      max-width:900px;
+      margin:40px auto;
+      padding:60px 20px;
+      border-radius:20px;
+      background:#fff;
       box-shadow:0 6px 18px rgba(0,0,0,0.05);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    section:hover { transform: translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,0.08); }
-    section:nth-child(even) { background-color:#fff0f5; }
+    section:hover { transform:translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,0.08);}
+    section:nth-child(even) { background:#fff0f5; }
 
     /* Lists */
     .skills-list, .experience-list { list-style:none; padding-left:0; display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; }
-    .skills-list li, .experience-list li { 
-      background-color:#f7d2d0; 
-      color:#333; 
-      padding:10px 14px; 
-      border-radius:25px; 
-      font-weight:bold; 
-      display:flex; 
-      align-items:center; 
+    .skills-list li, .experience-list li {
+      background:#f7d2d0;
+      color:#333;
+      padding:10px 14px;
+      border-radius:25px;
+      font-weight:bold;
+      display:flex;
+      align-items:center;
       box-shadow:0 4px 12px rgba(0,0,0,0.08);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .skills-list li:hover, .experience-list li:hover { transform: translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,0.1); }
+    .skills-list li:hover, .experience-list li:hover { transform:translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,0.1);}
     .skills-list li i, .experience-list li i { margin-right:8px; color:#b86b72; }
 
-    /* Section subtitles */
-    .sub-list { list-style: disc; margin-left: 25px; margin-bottom: 20px; }
-    .sub-list li { margin-bottom: 5px; }
+    /* Sub-lists (for details) */
+    .sub-list { list-style:disc; margin-left:25px; margin-bottom:20px; color:#555; line-height:1.6; }
+    .sub-list li { margin-bottom:8px; }
+    .sub-list li::marker { color:#b86b72; } /* rose-gold bullets */
 
     /* Footer */
-    footer { text-align:center; padding:40px 20px; background: linear-gradient(145deg, #f7d2d0, #f7caca); color:#333; border-radius:25px 25px 0 0; box-shadow: 0 -4px 12px rgba(0,0,0,0.05); }
-
-    /* Icons */
-    .icon { color: #b86b72; margin-right: 8px; }
+    footer { text-align:center; padding:40px 20px; background: linear-gradient(145deg, #f7d2d0, #f7caca); border-radius:25px 25px 0 0; box-shadow:0 -4px 12px rgba(0,0,0,0.05); }
 
     /* Responsive */
     @media(max-width:600px){
       h1{ font-size:2.2rem; }
       h2{ font-size:1.7rem; }
       h3{ font-size:1.2rem; }
-      .skills-list, .experience-list{ flex-direction: column; }
+      .skills-list, .experience-list { flex-direction:column; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header / Hero Section -->
+  <!-- Header -->
   <header>
     <h1>Dorothy Mejes</h1>
     <p>Licensed Professional Teacher | Admin & Accounting Support | Confident Communicator</p>
@@ -129,16 +116,16 @@
     </nav>
   </header>
 
-  <!-- About Me Section -->
+  <!-- About Me -->
   <section id="about">
     <h2>About Me <i class="fas fa-user"></i></h2>
-    <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, people-oriented, adaptable, and strong in time management & communication. My background allows me to easily adapt — whether teaching, supporting business operations, or representing a brand with confidence.</p>
+    <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, adaptable, strong in time management & communication. My background allows me to easily adapt — whether teaching, supporting business operations, or representing a brand with confidence.</p>
   </section>
 
-  <!-- Core Skills Section -->
+  <!-- Core Skills -->
   <section id="skills">
     <h2>Core Skills <i class="fas fa-lightbulb"></i></h2>
-    
+
     <h3>Teaching & Communication</h3>
     <ul class="sub-list">
       <li>Online & classroom teaching</li>
@@ -172,33 +159,33 @@
     </ul>
   </section>
 
-  <!-- Work Experience Section -->
+  <!-- Work Experience -->
   <section id="experience">
     <h2>Work Experience <i class="fas fa-briefcase"></i></h2>
-    
+
     <h3>Invoicing / Accounting Staff – Jockers Food Industries</h3>
     <ul class="sub-list">
-      <li>Processed and validated invoices</li>
+      <li>Processed invoices</li>
       <li>Supported accounts receivable</li>
-      <li>Maintained accurate records using ERP systems</li>
+      <li>Maintained accurate ERP records</li>
     </ul>
 
     <h3>Private Elementary Teacher – Easy Steps Learning School of Malolos</h3>
     <ul class="sub-list">
       <li>Delivered structured lessons</li>
       <li>Managed student progress and activities</li>
-      <li>Communicated with parents and staff</li>
+      <li>Communicated with parents & staff</li>
     </ul>
 
     <h3>Party Host / Store Marketing Assistant – Jollibee (College Years)</h3>
     <ul class="sub-list">
-      <li>Hosted children’s events</li>
-      <li>Assisted in marketing activities</li>
+      <li>Hosted events</li>
+      <li>Assisted marketing</li>
       <li>Delivered engaging customer experiences</li>
     </ul>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education">
     <h2>Education & Credentials <i class="fas fa-graduation-cap"></i></h2>
     <ul class="skills-list">
@@ -207,17 +194,17 @@
     </ul>
   </section>
 
-  <!-- Personal Brand / Work Style Section -->
+  <!-- Personal Brand -->
   <section id="brand">
     <h2>Personal Brand & Work Style <i class="fas fa-user-check"></i></h2>
     <ul class="sub-list">
       <li>Reliable, detail-oriented, professional, warm, and easy to work with</li>
       <li>Able to work independently in a remote setup</li>
-      <li>Professional, trustworthy, and adaptable to client needs</li>
+      <li>Professional, trustworthy, adaptable to client needs</li>
     </ul>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me <i class="fas fa-envelope"></i></h2>
     <p>📧 Email: <a href="mailto:dothymejes@email.com">dothymejes@email.com</a></p>
