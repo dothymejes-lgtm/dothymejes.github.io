@@ -16,7 +16,7 @@ Welcome to my personal portfolio website! This showcases my skills as a **Licens
 ## 🎨 Style & Design
 - **Look & Feel:** Clean, modern, minimalist, approachable  
 - **Color Palette (simulated with emojis):**  
-  - 💗 Primary: Pink (`#F7CACA`)  
+  - 💗 Primary: Pink (`#D18C8C`)  
   - ⚪ Secondary: Light Gray (`#E6E6E6`)  
   - 🏳 Background: Off White (`#FAFAFA`)  
   - 🖤 Headlines: Dark Gray (`#333333`)  
