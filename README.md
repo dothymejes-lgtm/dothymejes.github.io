@@ -37,7 +37,7 @@ Welcome to my personal portfolio website! This showcases my skills as a **Licens
 ✉️ [Contact](https://dothymejes.github.io#contact)
 
 ### 1️⃣ Home / Hero
-**Headline:** Licensed Professional Teacher | Admin & Accounting Support | Confident Communicator  
+**Headline:** Licensed Professional Teacher | Admin & Accounting Support | Customer Engagement & Event Specialist  
 **Sub-headline:** Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.  
 **CTA Buttons:** [View Portfolio](https://dothymejes.github.io#skills) | [Contact Me](https://dothymejes.github.io#contact)
 
