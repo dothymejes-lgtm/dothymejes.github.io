@@ -12,7 +12,8 @@
     /* Reset & base styles */
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
     body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333; }
-    a { color: #F7CACA; text-decoration: none; }
+    a { color: #F7CACA; text-decoration: none; transition: 0.3s; }
+    a:hover { color: #d99191; }
     h1,h2,h3 { font-family: 'Montserrat', sans-serif; color: #333; }
     h1 { font-size: 3rem; margin-bottom: 0.5rem; }
     h2 { font-size: 2rem; margin-bottom: 1rem; }
@@ -30,11 +31,12 @@
     }
     header p { font-size:1.2rem; margin-top:10px; }
     nav { text-align:center; margin-top:15px; }
-    nav a { margin:0 10px; font-weight:bold; }
+    nav a { margin:0 15px; font-weight:bold; font-size:1rem; }
+    nav a:hover { color:#d99191; }
 
     /* Buttons */
     .btn { display:inline-block; padding:10px 25px; background-color:#FAFAFA; color:#333; border-radius:25px; font-weight:bold; margin:10px 5px; transition:0.3s; border:2px solid #F7CACA; }
-    .btn:hover { background-color:#E6E6E6; }
+    .btn:hover { background-color:#E6E6E6; color:#333; }
 
     /* Sections */
     section { padding:60px 20px; max-width:900px; margin:40px auto; border-radius:15px; }
@@ -57,8 +59,8 @@
       h2{ font-size:1.7rem; }
       h3{ font-size:1.2rem; }
       .skills-list, .experience-list{ flex-direction: column; }
+      nav a{ display:block; margin:10px 0; }
     }
-
   </style>
 </head>
 <body>
@@ -138,7 +140,3 @@
 
 </body>
 </html>
-
-
-
-
