@@ -1,98 +1,167 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dorothy Mejes Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dorothy Mejes Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-  <style>
-    /* Reset & base */
-    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
-    body { font-family:'Lato', sans-serif; background-color:#FAFAFA; color:#333; line-height:1.7; }
-    a { color:#b86b72; text-decoration:none; }
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    /* Headings */
-    h1,h2,h3 { font-family:'Montserrat', sans-serif; }
-    h1 { font-size:3rem; color:#b76e79; text-align:center; margin-bottom:10px; }
-    h2 { font-size:2rem; margin-bottom:1rem; }
-    h3 { font-size:1.4rem; margin-bottom:0.5rem; }
-    p { color:#555; margin-bottom:1rem; }
+<style>
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-    /* Header */
-    header {
-      text-align:center;
-      padding:80px 20px 60px;
-      background: linear-gradient(145deg, #f7d2d0, #f7caca);
-      border-radius:0 0 25px 25px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.08);
-    }
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #FAFAFA;
+  color: #333;
+  line-height: 1.7;
+}
 
-    /* ✅ PHOTO — FIXED & SMALL */
-    .id-photo {
-      width:110px;
-      height:110px;
-      border-radius:50%;
-      border:3px solid #b86b72;
-      object-fit:cover;
-      display:block;
-      margin:0 auto 15px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    }
+a {
+  color: #b86b72;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    nav a { margin:0 10px; font-weight:bold; }
+a:hover {
+  color: #8e4b50;
+}
 
-    .btn {
-      display:inline-block;
-      padding:12px 26px;
-      background:#b76e79;
-      color:#fff;
-      border-radius:25px;
-      margin:10px 5px;
-      font-weight:bold;
-    }
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
 
-    section {
-      max-width:900px;
-      margin:40px auto;
-      padding:60px 20px;
-      background:#fff;
-      border-radius:20px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.05);
-    }
+h1 {
+  font-size: 2.5rem;
+  color: #b76e79;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
 
-    section:nth-child(even) { background:#fff0f5; }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-    .sub-list {
-      margin-left:25px;
-      color:#555;
-    }
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
 
-    footer {
-      text-align:center;
-      padding:30px;
-      background: linear-gradient(145deg, #f7d2d0, #f7caca);
-      border-radius:25px 25px 0 0;
-    }
-  </style>
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 80px 20px 50px;
+  background: linear-gradient(145deg, #f7d2d0, #f7caca);
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ✅ SMALL PHOTO FIX */
+.id-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #b86b72;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* NAV */
+header nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #b76e79, #d9a6a2);
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 10px 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 50px 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+section:nth-child(even) {
+  background: #fff0f5;
+}
+
+/* LISTS */
+.sub-list {
+  margin-left: 25px;
+}
+
+.sub-list li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(145deg, #f7d2d0, #f7caca);
+  border-radius: 25px 25px 0 0;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <img src="ID.jpg" alt="Dorothy Mejes" class="id-photo">
-
   <h1>Dorothy Mejes</h1>
   <p>Licensed Professional Teacher | Admin & Accounting Support | Customer Engagement & Event Specialist</p>
-  <p>Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.</p>
 
   <a href="#skills" class="btn">View Portfolio</a>
   <a href="#contact" class="btn">Contact Me</a>
 
   <nav>
-    <a href="#about">About Me</a> |
+    <a href="#about">About</a> |
     <a href="#skills">Skills</a> |
     <a href="#experience">Experience</a> |
     <a href="#education">Education</a> |
@@ -102,75 +171,42 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, adaptable, strong in time management & communication.</p>
+  <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles.</p>
 </section>
 
 <section id="skills">
   <h2>Core Skills</h2>
-
-  <h3>Teaching & Communication</h3>
   <ul class="sub-list">
-    <li>Online & classroom teaching</li>
-    <li>Student engagement</li>
-    <li>Clear communication</li>
-    <li>Time & classroom management</li>
-  </ul>
-
-  <h3>Admin & Accounting Support</h3>
-  <ul class="sub-list">
-    <li>Invoice processing & validation</li>
+    <li>Invoice Processing & Validation</li>
     <li>ERP Systems (QERP)</li>
-    <li>Accounts receivable support</li>
-    <li>Data entry & reconciliation</li>
-  </ul>
-
-  <h3>Creative & People Skills</h3>
-  <ul class="sub-list">
-    <li>Hosting & presentation</li>
-    <li>Customer service</li>
-    <li>Event coordination</li>
+    <li>Teaching & Communication</li>
+    <li>Customer Service</li>
   </ul>
 </section>
 
 <section id="experience">
   <h2>Work Experience</h2>
-
-  <h3>Invoicing / Accounting Staff – Jockers Food Industries</h3>
   <ul class="sub-list">
-    <li>Processed invoices</li>
-    <li>Maintained ERP records</li>
-  </ul>
-
-  <h3>Private Elementary Teacher – Easy Steps Learning School of Malolos</h3>
-  <ul class="sub-list">
-    <li>Delivered structured lessons</li>
-    <li>Communicated with parents & staff</li>
-  </ul>
-
-  <h3>Party Host / Store Marketing Assistant – Jollibee</h3>
-  <ul class="sub-list">
-    <li>Hosted events</li>
-    <li>Customer engagement</li>
+    <li>Invoicing / Accounting Staff – Jockers Food Industries</li>
+    <li>Private Elementary Teacher – Easy Steps Learning School</li>
+    <li>Party Host – Jollibee</li>
   </ul>
 </section>
 
 <section id="education">
-  <h2>Education & Credentials</h2>
-  <ul class="sub-list">
-    <li>Bachelor of Elementary Education – Bulacan State University</li>
-    <li>Licensed Professional Teacher (LET Passer)</li>
-  </ul>
+  <h2>Education</h2>
+  <p>Bachelor of Elementary Education – Bulacan State University</p>
+  <p>Licensed Professional Teacher (LET Passer)</p>
 </section>
 
 <section id="contact">
   <h2>Contact Me</h2>
   <p>Email: <a href="mailto:dothymejes@email.com">dothymejes@email.com</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/dorothy-mejes-631129283/" target="_blank">linkedin.com/in/dorothy-mejes-631129283</a></p>
-  <p>Location: Philippines</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/dorothy-mejes-631129283/" target="_blank">View Profile</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Dorothy Mejes | Portfolio</p>
+  <p>© 2026 Dorothy Mejes</p>
 </footer>
 
 </body>
