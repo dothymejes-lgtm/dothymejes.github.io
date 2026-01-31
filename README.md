@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This showcases my skills as a **Licensed Professional Teacher**, **Administrative & Accounting Support**, and **Virtual Assistant**.  
 
-🌐 **Live Site:** [https://yourusername.github.io](https://yourusername.github.io)
+🌐 **Live Site:** [https://dothymejes.github.io](https://dothymejes.github.io)
 
 ---
 
@@ -22,8 +22,8 @@ Welcome to my personal portfolio website! This showcases my skills as a **Licens
   - 🖤 Headlines: `#333333`  
   - 🌫 Body Text: `#555555`  
 - **Fonts:**  
-  - Headlines: Poppins / Nunito / Montserrat  
-  - Body: Lato / Open Sans / Raleway  
+  - Headlines: Montserrat / Nunito  
+  - Body: Lato  
 - Rounded buttons, subtle icons, generous white space  
 - Tone: Professional, trustworthy, warm  
 
@@ -34,17 +34,19 @@ Welcome to my personal portfolio website! This showcases my skills as a **Licens
 ### 1️⃣ Home / Hero
 **Headline:** Licensed Professional Teacher | Admin & Accounting Support | Confident Communicator  
 **Sub-headline:** Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.  
-**CTA Buttons:** [View Portfolio](https://yourusername.github.io) | [Contact Me](mailto:dothymejes@email.com)
+**CTA Buttons:** [View Portfolio](https://dothymejes.github.io#skills) | [Contact Me](https://dothymejes.github.io#contact)
 
 ### 2️⃣ About Me
 Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles.  
 Detail-oriented, trustworthy, adaptable, strong in time management & communication.  
+➡ [See About Me on website](https://dothymejes.github.io#about)
 
 ### 3️⃣ Core Skills
 - **Teaching & Communication:** Online & classroom teaching, student engagement, clear communication, time & classroom management  
 - **Admin & Accounting Support:** Invoice processing & validation, ERP systems (QERP), accounts receivable support, data entry & reconciliation, documentation & reporting  
 - **Creative & People Skills:** Hosting & presentation, customer service, event coordination, professional yet warm personality  
 - **Virtual Assistant Tools:** Zoom, Microsoft Teams, Google Docs & Forms, laptop-based teaching & admin tools  
+➡ [See Skills on website](https://dothymejes.github.io#skills)
 
 ### 4️⃣ Work Experience
 - **Invoicing / Accounting Staff – Jockers Food Industries**  
@@ -56,9 +58,12 @@ Detail-oriented, trustworthy, adaptable, strong in time management & communicati
 - **Party Host / Store Marketing Assistant – Jollibee (College Years)**  
   Hosted events, assisted marketing, delivered engaging customer experiences  
 
+➡ [See Experience on website](https://dothymejes.github.io#experience)
+
 ### 5️⃣ Education & Credentials
 - **Bachelor of Elementary Education** – Bulacan State University  
 - **Licensed Professional Teacher (LET Passer)**  
+➡ [See Education on website](https://dothymejes.github.io#education)
 
 ### 6️⃣ Personal Brand / Work Style
 Reliable, detail-oriented, professional, warm, and easy to work with.  
@@ -68,6 +73,7 @@ Able to work independently in a remote setup.
 - 📧 **Email:** [dothymejes@email.com](mailto:dothymejes@email.com)  
 - 🔗 **LinkedIn:** [linkedin.com/in/dorothy-mejes-631129283/](https://linkedin.com/in/dorothy-mejes-631129283/)  
 - 📍 **Location:** Philippines  
+➡ [Go to Contact Section](https://dothymejes.github.io#contact)
 
 ---
 
@@ -82,4 +88,3 @@ Able to work independently in a remote setup.
 - Rounded buttons, subtle icons for visual warmth  
 - Generous white space and clean, minimalist layout  
 - Highlights key skills, work experience, and VA-readiness  
-
