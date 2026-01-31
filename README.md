@@ -15,12 +15,12 @@ Welcome to my personal portfolio website! This showcases my skills as a **Licens
 
 ## 🎨 Style & Design
 - **Look & Feel:** Clean, modern, minimalist, approachable  
-- **Color Palette:**  
-  - 💗 Primary: `#F7CACA`  
-  - ⚪ Secondary: `#E6E6E6`  
-  - 🏳 Background: `#FAFAFA`  
-  - 🖤 Headlines: `#333333`  
-  - 🌫 Body Text: `#555555`  
+- **Color Palette (simulated with emojis):**  
+  - 💗 Primary: Pink (`#F7CACA`)  
+  - ⚪ Secondary: Light Gray (`#E6E6E6`)  
+  - 🏳 Background: Off White (`#FAFAFA`)  
+  - 🖤 Headlines: Dark Gray (`#333333`)  
+  - 🌫 Body Text: Gray (`#555555`)  
 - **Fonts:**  
   - Headlines: Montserrat / Nunito  
   - Body: Lato  
@@ -30,6 +30,11 @@ Welcome to my personal portfolio website! This showcases my skills as a **Licens
 ---
 
 ## 🏠 Sections
+👤 [About Me](https://dothymejes.github.io#about) |  
+💡 [Skills](https://dothymejes.github.io#skills) |  
+💼 [Experience](https://dothymejes.github.io#experience) |  
+🎓 [Education](https://dothymejes.github.io#education) |  
+✉️ [Contact](https://dothymejes.github.io#contact)
 
 ### 1️⃣ Home / Hero
 **Headline:** Licensed Professional Teacher | Admin & Accounting Support | Confident Communicator  
