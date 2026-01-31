@@ -4,134 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dorothy Mejes Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet">
   <style>
-    /* --- Base Styles --- */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #fffafa, #fdf0f0);
-      color: #333;
-    }
-
-    a { text-decoration: none; }
-
-    /* --- Hero Section --- */
-    #hero {
-      text-align: center;
-      padding: 100px 20px 60px;
-      background: linear-gradient(135deg, #f7caca, #ffe6e6);
-      color: #333;
-    }
-
-    #hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    #hero p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      font-weight: 500;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 25px;
-      margin: 5px;
-      border-radius: 25px;
-      background-color: #f28c8c;
-      color: white;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .button:hover {
-      background-color: #e06161;
-    }
-
-    /* --- Sections --- */
-    section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    section h2 {
-      color: #f28c8c;
-      margin-bottom: 15px;
-      font-size: 1.8em;
-    }
-
-    section p, section li {
-      font-size: 1.05em;
-      line-height: 1.7;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    /* --- Cards for Skills --- */
-    #skills ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      list-style: none;
-      padding: 0;
-    }
-
-    #skills li {
-      background-color: #fff0f0;
-      padding: 15px;
-      border-radius: 15px;
-      transition: 0.3s;
-    }
-
-    #skills li:hover {
-      background-color: #f7caca;
-      transform: translateY(-5px);
-    }
-
-    /* --- Contact Links --- */
-    #contact a {
-      color: #f28c8c;
-      font-weight: 600;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* --- Responsive --- */
-    @media (max-width: 600px) {
-      #hero h1 { font-size: 2.2em; }
-      #hero p { font-size: 1em; }
-      section { margin: 40px 20px; padding: 20px; }
-    }
+    /* Reset & base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333333; line-height: 1.6; }
+    a { color: #F7CACA; text-decoration: none; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: #333333; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; color: #555555; }
+    section { padding: 60px 20px; max-width: 900px; margin: 0 auto; }
+    .btn { display: inline-block; padding: 10px 20px; background-color: #F7CACA; color: #333333; border-radius: 25px; font-weight: bold; margin-top: 10px; transition: background 0.3s; }
+    .btn:hover { background-color: #e6a6a6; }
+    .skills-list, .experience-list { list-style: none; padding-left: 0; }
+    .skills-list li, .experience-list li { margin-bottom: 10px; }
+    header { text-align: center; padding: 80px 20px; background-color: #E6E6E6; border-bottom: 1px solid #ccc; }
+    header p { font-size: 1.2rem; margin-top: 10px; color: #555555; }
+    nav { text-align: center; margin-top: 15px; }
+    nav a { margin: 0 10px; font-weight: bold; }
+    footer { text-align: center; padding: 40px 20px; background-color: #E6E6E6; color: #333333; }
   </style>
 </head>
 <body>
 
-<section id="hero">
-  <h1>Hello, I’m Dorothy Mejes</h1>
-  <p>Licensed Professional Teacher | Admin & Accounting Support | Confident Communicator</p>
-  <a class="button" href="#skills">View Portfolio</a>
-  <a class="button" href="#contact">Contact Me</a>
-</section>
+  <!-- Header / Hero Section -->
+  <header>
+    <h1>Dorothy Mejes</h1>
+    <p>Licensed Professional Teacher | Admin & Accounting Support | Confident Communicator</p>
+    <p>Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+    <a href="#skills" class="btn">View Portfolio</a>
+    <nav>
+      <a href="#about">About Me</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#experience">Experience</a> |
+      <a href="#education">Education</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am a Licensed Professional Teacher with experience in teaching, administrative & accounting support, and customer-facing roles. I am detail-oriented, reliable, and adaptable in every environment.</p>
-</section>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, adaptable, and strong in time management and communication. Background allows easy adaptation — teaching, supporting business operations, or representing a brand with confidence.</p>
+  </section>
 
-<section id="skills">
-  <h2>Core Skills
+  <!-- Core Skills Section -->
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <h3>Teaching & Communication</h3>
+    <ul class="skills-list">
+      <li>Online & classroom teaching</li>
+      <li>Student engagement & facilitation</li>
+      <li>Clear communication</li>
+      <li>Time & classroom management</li>
+    </ul>
+
+    <h3>Admin & Accounting Support</h3>
+    <ul class="skills-list">
+      <li>Invoice processing & validation</li>
+      <li>ERP Systems (QERP)</li>
+      <li>Accounts receivable support</li>
+      <li>Data entry & reconciliation</li>
+      <li>Documentation & reporting</li>
+    </ul>
+
+    <h3>Creative & People Skills</h3>
+    <ul class="skills-list">
+      <li>Hosting & presentation</li>
+      <li>Customer service</li>
+      <li>Event coordination</li>
+      <li>Professional yet warm personality</li>
+    </ul>
+
+    <h3>Virtual Assistant Tools</h3>
+    <ul class="skills-list">
+      <li>Zoom, Microsoft Teams</li>
+      <li>Google Docs & Forms</li>
+      <li>Laptop-based teaching & admin tools</li>
+    </ul>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul class="experience-list">
+      <li>
+        <strong>Invoicing / Accounting Staff – Jockers Food Industries</strong><br>
+        Processed and validated invoices, supported accounts receivable, maintained accurate ERP records.
+      </li>
+      <li>
+        <strong>Private Elementary Teacher – Easy Steps Learning School of Malolos</strong><br>
+        Delivered structured lessons, managed student progress, communicated with parents & staff.
+      </li>
+      <li>
+        <strong>Party Host / Store Marketing Assistant – Jollibee (College Years)</strong><br>
+        Hosted events, assisted marketing activities, delivered engaging customer experiences.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education & Credentials</h2>
+    <p><strong>Bachelor of Elementary Education</strong> – Bulacan State University</p>
+    <p><strong>Licensed Professional Teacher (LET Passer)</strong></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:dothymejes@email.com">dothymejes@email.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/dorothy-mejes-631129283/" target="_blank">linkedin.com/in/dorothy-mejes-631129283/</a></p>
+    <p>📍 Location: Philippines</p>
+    <a href="mailto:dothymejes@email.com" class="btn">Send Email</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Dorothy Mejes | Virtual Assistant & Portfolio</p>
+  </footer>
+
+</body>
+</html>
