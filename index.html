@@ -6,97 +6,75 @@
   <title>Dorothy Mejes Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
   <style>
     /* Reset & base */
-    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
-    body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333; line-height:1.7; }
-    a { color:#b86b72; text-decoration:none; transition:0.3s; }
-    a:hover { color:#8e4b50; }
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+    body { font-family:'Lato', sans-serif; background-color:#FAFAFA; color:#333; line-height:1.7; }
+    a { color:#b86b72; text-decoration:none; }
 
     /* Headings */
-    h1,h2,h3 { font-family:'Montserrat', sans-serif; color:#333; }
-    h1 { font-size:3rem; color:#b76e79; margin-bottom:0.5rem; text-align:center; text-shadow:0 1px 2px rgba(0,0,0,0.1);}
+    h1,h2,h3 { font-family:'Montserrat', sans-serif; }
+    h1 { font-size:3rem; color:#b76e79; text-align:center; margin-bottom:10px; }
     h2 { font-size:2rem; margin-bottom:1rem; }
-    h3 { font-size:1.5rem; margin-bottom:0.5rem; }
+    h3 { font-size:1.4rem; margin-bottom:0.5rem; }
+    p { color:#555; margin-bottom:1rem; }
 
-    p { margin-bottom:1rem; color:#555; }
-
-    /* Header / Hero */
-    header { 
+    /* Header */
+    header {
       text-align:center;
-      padding:100px 20px 60px;
+      padding:80px 20px 60px;
       background: linear-gradient(145deg, #f7d2d0, #f7caca);
-      border-bottom:1px solid #e5d4d2; 
       border-radius:0 0 25px 25px;
       box-shadow:0 8px 20px rgba(0,0,0,0.08);
     }
-    header nav { margin-top:20px; }
-    nav a { margin:0 12px; font-weight:bold; position:relative; }
-    nav a::after { content:''; display:block; width:0; height:2px; background:#b86b72; transition:width 0.3s; margin-top:3px; }
-    nav a:hover::after { width:100%; }
 
-    /* Buttons */
+    /* ✅ PHOTO — FIXED & SMALL */
+    .id-photo {
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      border:3px solid #b86b72;
+      object-fit:cover;
+      display:block;
+      margin:0 auto 15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a { margin:0 10px; font-weight:bold; }
+
     .btn {
       display:inline-block;
-      padding:12px 28px;
-      background: linear-gradient(135deg, #b76e79, #d9a6a2);
+      padding:12px 26px;
+      background:#b76e79;
       color:#fff;
       border-radius:25px;
-      font-weight:bold;
       margin:10px 5px;
-      border:2px solid #b86b72;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-      transition:all 0.3s ease;
+      font-weight:bold;
     }
-    .btn:hover { transform:translateY(-3px); background: linear-gradient(135deg, #d9a6a2, #b76e79); }
 
-    /* Sections */
     section {
       max-width:900px;
       margin:40px auto;
       padding:60px 20px;
-      border-radius:20px;
       background:#fff;
+      border-radius:20px;
       box-shadow:0 6px 18px rgba(0,0,0,0.05);
-      transition: transform 0.3s, box-shadow 0.3s;
     }
-    section:hover { transform:translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,0.08);}
+
     section:nth-child(even) { background:#fff0f5; }
 
-    /* Sub-lists */
-    .sub-list { list-style:disc; margin-left:25px; margin-bottom:20px; color:#555; line-height:1.6; }
-    .sub-list li { margin-bottom:8px; }
-    .sub-list li::marker { color:#b86b72; }
-
-    /* PHOTO STYLE (FIXED) */
-    .id-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #b86b72;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .id-photo:hover {
-      transform: scale(1.05);
+    .sub-list {
+      margin-left:25px;
+      color:#555;
     }
 
-    /* Footer */
-    footer { text-align:center; padding:40px 20px; background: linear-gradient(145deg, #f7d2d0, #f7caca); border-radius:25px 25px 0 0; }
-
-    /* Responsive */
-    @media(max-width:600px){
-      h1{ font-size:2.2rem; }
-      h2{ font-size:1.7rem; }
-      h3{ font-size:1.2rem; }
+    footer {
+      text-align:center;
+      padding:30px;
+      background: linear-gradient(145deg, #f7d2d0, #f7caca);
+      border-radius:25px 25px 0 0;
     }
   </style>
 </head>
@@ -122,7 +100,78 @@
   </nav>
 </header>
 
-<!-- REST OF YOUR CONTENT STAYS EXACTLY THE SAME -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, adaptable, strong in time management & communication.</p>
+</section>
+
+<section id="skills">
+  <h2>Core Skills</h2>
+
+  <h3>Teaching & Communication</h3>
+  <ul class="sub-list">
+    <li>Online & classroom teaching</li>
+    <li>Student engagement</li>
+    <li>Clear communication</li>
+    <li>Time & classroom management</li>
+  </ul>
+
+  <h3>Admin & Accounting Support</h3>
+  <ul class="sub-list">
+    <li>Invoice processing & validation</li>
+    <li>ERP Systems (QERP)</li>
+    <li>Accounts receivable support</li>
+    <li>Data entry & reconciliation</li>
+  </ul>
+
+  <h3>Creative & People Skills</h3>
+  <ul class="sub-list">
+    <li>Hosting & presentation</li>
+    <li>Customer service</li>
+    <li>Event coordination</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+
+  <h3>Invoicing / Accounting Staff – Jockers Food Industries</h3>
+  <ul class="sub-list">
+    <li>Processed invoices</li>
+    <li>Maintained ERP records</li>
+  </ul>
+
+  <h3>Private Elementary Teacher – Easy Steps Learning School of Malolos</h3>
+  <ul class="sub-list">
+    <li>Delivered structured lessons</li>
+    <li>Communicated with parents & staff</li>
+  </ul>
+
+  <h3>Party Host / Store Marketing Assistant – Jollibee</h3>
+  <ul class="sub-list">
+    <li>Hosted events</li>
+    <li>Customer engagement</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education & Credentials</h2>
+  <ul class="sub-list">
+    <li>Bachelor of Elementary Education – Bulacan State University</li>
+    <li>Licensed Professional Teacher (LET Passer)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:dothymejes@email.com">dothymejes@email.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/dorothy-mejes-631129283/" target="_blank">linkedin.com/in/dorothy-mejes-631129283</a></p>
+  <p>Location: Philippines</p>
+</section>
+
+<footer>
+  <p>© 2026 Dorothy Mejes | Portfolio</p>
+</footer>
 
 </body>
 </html>
