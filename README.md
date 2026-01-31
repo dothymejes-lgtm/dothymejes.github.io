@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site showcases my skills, experience, and work as a **Licensed Professional Teacher**, **Administrative & Accounting Support**, and **Virtual Assistant**.  
 
-🌐 **Live Site:** [https://yourusername.github.io](https://yourusername.github.io)
+🌐 **Live Site:** [https://dothymejes.github.io](https://dothymejes.github.io)
 
 ---
 
