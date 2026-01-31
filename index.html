@@ -102,6 +102,22 @@
 
   <!-- Header -->
   <header>
+    <img src ="ID.jpg" alt="Dorothy Mejes" class="id-photo">
+    .id-photo {
+  width: 150px;          /* size of photo */
+  height: 150px;
+  border-radius: 50%;    /* circular shape */
+  border: 3px solid #b86b72; /* rose-gold border */
+  object-fit: cover;     /* fills the circle properly */
+  display: block;
+  margin: 0 auto 20px;   /* centers it and adds space below */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.id-photo:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
     <h1>Dorothy Mejes</h1>
     <p>Licensed Professional Teacher | Admin & Accounting Support | Customer Engagement & Event Specialist</p>
     <p>Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.</p>
