@@ -6,60 +6,59 @@
   <title>Dorothy Mejes Portfolio</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
+  <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    /* Reset & base */
+    /* Reset & base styles */
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
-    body { font-family:'Lato', sans-serif; background:#FAFAFA; color:#333; line-height:1.6; }
-    a { color:#F7CACA; text-decoration:none; }
-    h1,h2,h3 { font-family:'Montserrat', sans-serif; color:#333; }
-    h1{ font-size:3rem; margin-bottom:0.5rem; }
-    h2{ font-size:2rem; margin-bottom:1rem; }
-    h3{ font-size:1.5rem; margin-bottom:0.5rem; }
-    p{ margin-bottom:1rem; color:#555; }
+    body { font-family: 'Lato', sans-serif; background-color: #FAFAFA; color: #333; }
+    a { color: #F7CACA; text-decoration: none; }
+    h1,h2,h3 { font-family: 'Montserrat', sans-serif; color: #333; }
+    h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; color: #555; }
 
     /* Header / Hero */
-    header{ 
+    header { 
       text-align:center; 
-      padding:120px 20px 60px; 
+      padding:100px 20px 60px; 
       background-color:#F7CACA; 
       color:#333;
       border-bottom:1px solid #E6E6E6; 
       border-radius:0 0 25px 25px;
-      position: relative;
     }
-    header p{ font-size:1.2rem; margin-top:10px; }
-
-    /* Sticky Navigation */
-    nav{ text-align:center; margin-top:20px; position:sticky; top:0; background:#FAFAFA; padding:10px 0; z-index:100; border-bottom:1px solid #E6E6E6; }
-    nav a{ margin:0 12px; font-weight:bold; transition:0.3s; }
-    nav a:hover{ color:#e69999; }
+    header p { font-size:1.2rem; margin-top:10px; }
+    nav { text-align:center; margin-top:15px; }
+    nav a { margin:0 10px; font-weight:bold; }
 
     /* Buttons */
-    .btn{ display:inline-block; padding:10px 25px; background:#FAFAFA; color:#333; border-radius:25px; font-weight:bold; margin:10px 5px; transition:0.3s; border:2px solid #F7CACA; }
-    .btn:hover{ background:#E6E6E6; transform:scale(1.05); }
+    .btn { display:inline-block; padding:10px 25px; background-color:#FAFAFA; color:#333; border-radius:25px; font-weight:bold; margin:10px 5px; transition:0.3s; border:2px solid #F7CACA; }
+    .btn:hover { background-color:#E6E6E6; }
 
     /* Sections */
-    section{ padding:60px 20px; max-width:900px; margin:40px auto; border-radius:15px; transition:0.3s; }
-    section:nth-child(even){ background:#F7F7F7; }
+    section { padding:60px 20px; max-width:900px; margin:40px auto; border-radius:15px; }
+    section:nth-child(even) { background-color:#F7F7F7; }
 
-    /* Skill / Experience badges */
-    .skills-list, .experience-list{ list-style:none; padding-left:0; display:flex; flex-wrap:wrap; gap:10px; }
-    .skills-list li, .experience-list li{ background:#F7CACA; color:#333; padding:8px 12px; border-radius:25px; font-weight:bold; display:flex; align-items:center; transition:0.3s; cursor:pointer; }
-    .skills-list li i, .experience-list li i{ margin-right:8px; }
-    .skills-list li:hover, .experience-list li:hover{ background:#e69999; transform:scale(1.1); color:#fff; }
+    /* Lists */
+    .skills-list, .experience-list { list-style:none; padding-left:0; display:flex; flex-wrap:wrap; gap:10px; }
+    .skills-list li, .experience-list li { background-color:#F7CACA; color:#333; padding:8px 12px; border-radius:20px; font-weight:bold; display:flex; align-items:center; }
+    .skills-list li i, .experience-list li i { margin-right:8px; }
 
     /* Footer */
-    footer{ text-align:center; padding:40px 20px; background:#E6E6E6; color:#333; border-radius:25px 25px 0 0; }
+    footer { text-align:center; padding:40px 20px; background-color:#E6E6E6; color:#333; border-radius:25px 25px 0 0; }
+
+    /* Icons */
+    .icon { color: #F7CACA; margin-right: 8px; }
 
     /* Responsive */
     @media(max-width:600px){
       h1{ font-size:2.2rem; }
       h2{ font-size:1.7rem; }
       h3{ font-size:1.2rem; }
-      .skills-list, .experience-list{ flex-direction:column; }
+      .skills-list, .experience-list{ flex-direction: column; }
     }
+
   </style>
 </head>
 <body>
@@ -71,24 +70,22 @@
     <p>Blending professionalism, creativity, and people-centered skills across education, administration, and customer engagement.</p>
     <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Contact Me</a>
     <a href="#skills" class="btn"><i class="fas fa-briefcase"></i> View Portfolio</a>
+    <nav>
+      <a href="#about"><i class="fas fa-user"></i> About Me</a> |
+      <a href="#skills"><i class="fas fa-lightbulb"></i> Skills</a> |
+      <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a> |
+      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a> |
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about"><i class="fas fa-user"></i> About Me</a>
-    <a href="#skills"><i class="fas fa-lightbulb"></i> Skills</a>
-    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-  </nav>
-
-  <!-- About Me -->
+  <!-- About Me Section -->
   <section id="about">
     <h2>About Me <i class="fas fa-user"></i></h2>
     <p>Licensed Professional Teacher with experience in online education, invoicing/accounting support, and customer-facing roles. Detail-oriented, trustworthy, adaptable, and strong in time management & communication. Background allows easy adaptation — teaching, supporting business operations, or representing a brand with confidence.</p>
   </section>
 
-  <!-- Skills -->
+  <!-- Core Skills Section -->
   <section id="skills">
     <h2>Core Skills <i class="fas fa-lightbulb"></i></h2>
     <ul class="skills-list">
@@ -106,7 +103,7 @@
     </ul>
   </section>
 
-  <!-- Experience -->
+  <!-- Work Experience Section -->
   <section id="experience">
     <h2>Work Experience <i class="fas fa-briefcase"></i></h2>
     <ul class="experience-list">
@@ -116,7 +113,7 @@
     </ul>
   </section>
 
-  <!-- Education -->
+  <!-- Education Section -->
   <section id="education">
     <h2>Education & Credentials <i class="fas fa-graduation-cap"></i></h2>
     <ul class="skills-list">
@@ -125,7 +122,7 @@
     </ul>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me <i class="fas fa-envelope"></i></h2>
     <p>📧 Email: <a href="mailto:dothymejes@email.com">dothymejes@email.com</a></p>
@@ -141,5 +138,7 @@
 
 </body>
 </html>
+
+
 
 
